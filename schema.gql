@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AppEntity {
+  id: Float!
+  name: String!
+}
+
+type Query {
+  getAllUsers: [AppEntity!]!
+}
+
+type Mutation {
+  createUser(userName: String!): [AppEntity!]!
+  deleteUser(userId: Float!): [AppEntity!]!
+  updateUser(userId: Float!, newName: String!): [AppEntity!]!
+}
+
+type Subscription {
+  alertUser: [AppEntity!]!
+}
