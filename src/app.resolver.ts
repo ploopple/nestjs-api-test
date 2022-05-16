@@ -22,6 +22,7 @@ export class AppResolver {
   deleteUser(
     @Args({ name: 'userId', type: () => Number }) userId: number,
   ): AppEntity[] {
+    console.log('Hi');
     const userObj = Users.find((user) => user.id === userId);
     const userIndex = Users.indexOf(userObj);
     if (userIndex === -1)
@@ -44,6 +45,8 @@ export class AppResolver {
     const userObj = Users.find((user) => user.id === userId);
 
     const userIndex = Users.indexOf(userObj);
+    if (userIndex === -1)
+      return [{ id: -1, name: 'user not found to be updated' }];
     const oldUserName: string = Users[userIndex].name;
 
     Users[userIndex].name = newName;
