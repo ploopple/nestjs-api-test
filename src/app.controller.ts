@@ -3,7 +3,7 @@ import { Controller, Get } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  @Get('/api')
+  @Get('/')
   getHello() {
     const msg = `${process.env.MSG}`;
     return { msg };
