@@ -6,7 +6,7 @@ export class AppController {
   @Get('/')
   getHello() {
     const msg = `${process.env.MSG}`;
-    return return `
+    return `
     <html>
     <head>
     <title>one</title>
