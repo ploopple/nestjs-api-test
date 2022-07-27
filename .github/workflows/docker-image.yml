@@ -38,11 +38,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: go to folder
-        run: |
-          pwd
-          ls
-
       - name: check node
         run: node -v && pwd && ls
 
@@ -54,3 +49,6 @@ jobs:
 
       - name: run tests
         run: yarn test
+
+      - name: run build
+        run: yarn build
