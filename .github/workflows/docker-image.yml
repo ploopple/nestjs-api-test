@@ -34,4 +34,4 @@ jobs:
 
     steps:
       - name: Install depenses
-        run: npm install --global yarn | yarn
+        run: npm install --global yarn | yarn | yarn test | yarn build
