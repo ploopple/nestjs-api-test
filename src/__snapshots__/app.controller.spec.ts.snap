@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`appController should be able to see author's profile without sensitive info being displayed 1`] = `
+Object {
+  "getAllUsers": Array [
+    Object {
+      "name": "Mohamed",
+    },
+    Object {
+      "name": "Banen",
+    },
+    Object {
+      "name": "Ayoub",
+    },
+    Object {
+      "name": "Faysal",
+    },
+    Object {
+      "name": "Mohamed",
+    },
+    Object {
+      "name": "Banen",
+    },
+    Object {
+      "name": "Ayoub",
+    },
+    Object {
+      "name": "Faysal",
+    },
+    Object {
+      "name": "Mohamed",
+    },
+    Object {
+      "name": "Banen",
+    },
+    Object {
+      "name": "Ayoub",
+    },
+    Object {
+      "name": "Faysal",
+    },
+  ],
+}
+`;
