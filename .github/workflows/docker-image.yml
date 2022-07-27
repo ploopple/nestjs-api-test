@@ -36,8 +36,12 @@ jobs:
         node-version: [16.x]
 
     steps:
+      - uses: actions/checkout@v2
+
       - name: go to folder
-        run: cd nestjs-api-test/nestjs-api-test
+        run: |
+          pwd
+          ls
 
       - name: check node
         run: node -v && pwd && ls
