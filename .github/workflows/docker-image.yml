@@ -33,5 +33,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install depenses
-        run: npm install --global yarn | yarn | yarn test | yarn build
+      - name: Install yarn
+        run: npm install --global yarn
+
+      - name: install depenses using yarn
+        run: yarn
