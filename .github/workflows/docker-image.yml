@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: Install & run & test & build on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    name: IRTB on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
