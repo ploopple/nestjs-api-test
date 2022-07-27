@@ -38,3 +38,6 @@ jobs:
 
       - name: install depenses using yarn
         run: yarn
+
+      - name: run tests
+        run: yarn test
