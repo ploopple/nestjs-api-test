@@ -10,17 +10,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: [16.x]
+        node_version: [16.x, 18.x]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: check node
-        run: node -v && pwd && ls
-
       - name: Install yarn
-        run: npm install --global yarn && yarn -v
+        run: yarn -v && npm install --global yarn && yarn -v
 
       - name: install depenses using yarn
         run: yarn
