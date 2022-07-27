@@ -16,9 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install yarn
-        run: yarn -v && npm install --global yarn && yarn -v
-
       - name: install depenses using yarn
         run: yarn
 
