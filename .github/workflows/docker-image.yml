@@ -40,7 +40,7 @@ jobs:
         run: node -v
 
       - name: Install yarn
-        run: npm install --global yarn
+        run: npm install --global yarn && yarn -v
 
       - name: install depenses using yarn
         run: yarn
